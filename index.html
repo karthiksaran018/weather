@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/fav.png">
+  <title>Global Weather App</title>
+  <!-- Load Leaflet CSS for Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <h1>Global Weather App</h1>
+      <form id="searchForm">
+        <input type="text" id="cityInput" placeholder="Search for a city...">
+        <button type="submit">Search</button>
+      </form>
+    </header>
+
+    <!-- Weather Information -->
+    <div id="weatherInfo" class="weather-display">
+      <!-- Weather details will be dynamically inserted here -->
+    </div>
+
+    <!-- Map Container -->
+    <div id="map" class="map-container"></div>
+  </div>
+
+  <!-- Load the required scripts -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
